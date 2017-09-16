@@ -23,7 +23,7 @@
 * <https://github.com/jlchen4/webapi>
 
 ### 2.6、 Java示例详解
-
+```java
 	package com.iflytek.voicecloud.jupiter.platform.common;
 	
 	import java.io.BufferedReader;
@@ -197,3 +197,4 @@
 			return hexDigits[d1] + hexDigits[d2];
 		}
 	}
+```
