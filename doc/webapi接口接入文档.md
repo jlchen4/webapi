@@ -1,28 +1,28 @@
-#webapi接口接入文档V1.0
-##1、简介
+# webapi接口接入文档V1.0
+## 1、简介
 * 本文档旨在帮助开发者快速接入webapi接口
 
-##2、接入步骤
-###2.1、	aiui开放平台创建webapi应用
+## 2、接入步骤
+### 2.1、	aiui开放平台创建webapi应用
 ![创建app](createApp.png)
 
-###2.2、 得到APPID和ApiKey
+### 2.2、 得到APPID和ApiKey
 ![得到APPID和ApiKey](apikey.png)
 
-###2.3、 添加ip白名单
+### 2.3、 添加ip白名单
 * ip白名单为调用webapi接口服务器外网ip,请务必配置正确。
 ![添加ip白名单](ip.png)
 
-###2.4、	配置相关技能
+### 2.4、	配置相关技能
 * 调用文本语义、语音语义接口时，请根据需要配置相关技能。详细步骤可参考文档地址
 * <http://aiui.xfyun.cn/info/guide>
 ![配置相关技能](skill.png)
 
-###2.5、 参考demo编写代码
+### 2.5、 参考demo编写代码
 * webapi示例代码地址
 * <https://github.com/jlchen4/webapi>
 
-###2.6、 Java示例详解
+### 2.6、 Java示例详解
 
 	package com.iflytek.voicecloud.jupiter.platform.common;
 	
