@@ -11,7 +11,7 @@ def webiat():
 	requrl = "https://api.xfyun.cn/v1/aiui/v1/iat"
 	print('requrl:{}'.format(requrl))
 	#讯飞开放平台注册申请应用的应用ID(APPID)
-	x_appid = "59af8ce3";
+	x_appid = "xxxxxxxx";
 	print('X-Appid:{}'.format(x_appid))
 	cur_time = int(time.time())
 	print('X-CurTime:{}'.format(cur_time))
@@ -25,7 +25,7 @@ def webiat():
 	file_data.close()
 	body_data = "data="+file_base64.decode("utf-8")
 	#ApiKey创建应用时自动生成
-	api_key = "4d55c6f2c3d94d4f9cdba4dcc56b9d90"
+	api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 	token = api_key + str(cur_time)+ xparam_base64 + body_data
 	m = hashlib.md5()
 	m.update(token.encode(encoding='utf-8'))

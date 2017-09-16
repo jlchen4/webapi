@@ -6,7 +6,7 @@ const hash = crypto.createHash('md5');
 
 var webiat = function(){
 	//讯飞开放平台注册申请应用的应用ID(APPID)
-	var xAppid = "59af8ce3";
+	var xAppid = "xxxxxxxx";
 	console.log('X-Appid:'+xAppid);
 	var timestamp = Date.parse(new Date());  
 	var curTime = timestamp / 1000; 
@@ -20,7 +20,7 @@ var webiat = function(){
 	var fileBase64 = new Buffer(fileData).toString('base64');
 	var bodyData = "data="+fileBase64;
 	//ApiKey创建应用时自动生成
-	var apiKey = "4d55c6f2c3d94d4f9cdba4dcc56b9d90";
+	var apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 	var token = apiKey + curTime+ xParamBase64 + bodyData;
 	hash.update(token);
 	var xCheckSum = hash.digest('hex');

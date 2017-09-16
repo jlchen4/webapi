@@ -26,7 +26,7 @@ public class Iat {
 
 	public static void main(String[] args) {
 		//讯飞开放平台注册申请应用的应用ID(APPID)
-		String xAppid = "59af8ce3";
+		String xAppid = "xxxxxxxx";
 		System.out.println("X-Appid:" + xAppid);
 		long time = System.currentTimeMillis() / 1000;
 		String curTime = String.valueOf(time);
@@ -46,7 +46,7 @@ public class Iat {
 		}
 		fileData = "data=" + fileData;
 		//ApiKey创建应用时自动生成
-		String apiKey = "4d55c6f2c3d94d4f9cdba4dcc56b9d90";
+		String apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 		String token = apiKey + curTime + xParamBase64 + fileData;
 		String xCheckSum = md5Encode(token);
 		System.out.println("X-CheckSum:" + xCheckSum);
